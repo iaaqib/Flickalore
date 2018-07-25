@@ -1,0 +1,6 @@
+framework module Pods_FlickaloreUITests {
+  umbrella header "Pods-FlickaloreUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

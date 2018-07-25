@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		319379B67D532F67D15312B9 /* Pods_FlickaloreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2582A66B543F611063FAE2 /* Pods_FlickaloreUITests.framework */; };
+		71DCB029F0E0B0EAE564229C /* Pods_FlickaloreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8558CCD117056488E0CCCF8 /* Pods_FlickaloreTests.framework */; };
 		7B6AE2212108923F00F493F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE2202108923F00F493F4 /* AppDelegate.swift */; };
 		7B6AE2232108924000F493F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE2222108924000F493F4 /* ViewController.swift */; };
 		7B6AE2262108924000F493F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6AE2242108924000F493F4 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		7B6AE22B2108924800F493F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6AE2292108924800F493F4 /* LaunchScreen.storyboard */; };
 		7B6AE2362108924900F493F4 /* FlickaloreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE2352108924900F493F4 /* FlickaloreTests.swift */; };
 		7B6AE2412108924900F493F4 /* FlickaloreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE2402108924900F493F4 /* FlickaloreUITests.swift */; };
+		90E6D9498023000DA0073814 /* Pods_Flickalore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5E1F3FBD2D977FF59B73C /* Pods_Flickalore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C45E1FE8091C687D516A07A /* Pods-FlickaloreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickaloreUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlickaloreUITests/Pods-FlickaloreUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2247630C89B4648441561E5E /* Pods-FlickaloreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickaloreUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickaloreUITests/Pods-FlickaloreUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		22B5E1F3FBD2D977FF59B73C /* Pods_Flickalore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flickalore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69C5F268DB62D55AA9D5C4C8 /* Pods-Flickalore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickalore.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flickalore/Pods-Flickalore.release.xcconfig"; sourceTree = "<group>"; };
+		6E2582A66B543F611063FAE2 /* Pods_FlickaloreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickaloreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6AE21D2108923F00F493F4 /* Flickalore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flickalore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6AE2202108923F00F493F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B6AE2222108924000F493F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		7B6AE23C2108924900F493F4 /* FlickaloreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickaloreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6AE2402108924900F493F4 /* FlickaloreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickaloreUITests.swift; sourceTree = "<group>"; };
 		7B6AE2422108924900F493F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96367767241CA0ACA2716332 /* Pods-FlickaloreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickaloreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickaloreTests/Pods-FlickaloreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF2ED687DEA6831A39CBAC9B /* Pods-FlickaloreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickaloreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlickaloreTests/Pods-FlickaloreTests.release.xcconfig"; sourceTree = "<group>"; };
+		C33B032CEE60C4DFF77ADE37 /* Pods-Flickalore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickalore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flickalore/Pods-Flickalore.debug.xcconfig"; sourceTree = "<group>"; };
+		C8558CCD117056488E0CCCF8 /* Pods_FlickaloreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickaloreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E6D9498023000DA0073814 /* Pods_Flickalore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71DCB029F0E0B0EAE564229C /* Pods_FlickaloreTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319379B67D532F67D15312B9 /* Pods_FlickaloreUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17D2594E66B507BEB55DF36F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C33B032CEE60C4DFF77ADE37 /* Pods-Flickalore.debug.xcconfig */,
+				69C5F268DB62D55AA9D5C4C8 /* Pods-Flickalore.release.xcconfig */,
+				96367767241CA0ACA2716332 /* Pods-FlickaloreTests.debug.xcconfig */,
+				BF2ED687DEA6831A39CBAC9B /* Pods-FlickaloreTests.release.xcconfig */,
+				2247630C89B4648441561E5E /* Pods-FlickaloreUITests.debug.xcconfig */,
+				1C45E1FE8091C687D516A07A /* Pods-FlickaloreUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7B6AE2142108923F00F493F4 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				7B6AE2342108924900F493F4 /* FlickaloreTests */,
 				7B6AE23F2108924900F493F4 /* FlickaloreUITests */,
 				7B6AE21E2108923F00F493F4 /* Products */,
+				17D2594E66B507BEB55DF36F /* Pods */,
+				F2C9A76BA4E6EBDC3D326049 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +155,16 @@
 			path = FlickaloreUITests;
 			sourceTree = "<group>";
 		};
+		F2C9A76BA4E6EBDC3D326049 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22B5E1F3FBD2D977FF59B73C /* Pods_Flickalore.framework */,
+				C8558CCD117056488E0CCCF8 /* Pods_FlickaloreTests.framework */,
+				6E2582A66B543F611063FAE2 /* Pods_FlickaloreUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B6AE2452108924900F493F4 /* Build configuration list for PBXNativeTarget "Flickalore" */;
 			buildPhases = (
+				F03B80B871E80ACF7E43C769 /* [CP] Check Pods Manifest.lock */,
 				7B6AE2192108923F00F493F4 /* Sources */,
 				7B6AE21A2108923F00F493F4 /* Frameworks */,
 				7B6AE21B2108923F00F493F4 /* Resources */,
+				AB332BD72207FE9579077632 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B6AE2482108924900F493F4 /* Build configuration list for PBXNativeTarget "FlickaloreTests" */;
 			buildPhases = (
+				22678C1029A09FD8CF286C51 /* [CP] Check Pods Manifest.lock */,
 				7B6AE22D2108924900F493F4 /* Sources */,
 				7B6AE22E2108924900F493F4 /* Frameworks */,
 				7B6AE22F2108924900F493F4 /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B6AE24B2108924900F493F4 /* Build configuration list for PBXNativeTarget "FlickaloreUITests" */;
 			buildPhases = (
+				9976229DF0B0865026BB37E9 /* [CP] Check Pods Manifest.lock */,
 				7B6AE2382108924900F493F4 /* Sources */,
 				7B6AE2392108924900F493F4 /* Frameworks */,
 				7B6AE23A2108924900F493F4 /* Resources */,
@@ -250,6 +294,85 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22678C1029A09FD8CF286C51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickaloreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9976229DF0B0865026BB37E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickaloreUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB332BD72207FE9579077632 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Flickalore/Pods-Flickalore-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FlickrKit/FlickrKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlickrKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flickalore/Pods-Flickalore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F03B80B871E80ACF7E43C769 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flickalore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B6AE2192108923F00F493F4 /* Sources */ = {
@@ -428,6 +551,7 @@
 		};
 		7B6AE2462108924900F493F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C33B032CEE60C4DFF77ADE37 /* Pods-Flickalore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +569,7 @@
 		};
 		7B6AE2472108924900F493F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69C5F268DB62D55AA9D5C4C8 /* Pods-Flickalore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +587,7 @@
 		};
 		7B6AE2492108924900F493F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96367767241CA0ACA2716332 /* Pods-FlickaloreTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +608,7 @@
 		};
 		7B6AE24A2108924900F493F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2ED687DEA6831A39CBAC9B /* Pods-FlickaloreTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +629,7 @@
 		};
 		7B6AE24C2108924900F493F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2247630C89B4648441561E5E /* Pods-FlickaloreUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +649,7 @@
 		};
 		7B6AE24D2108924900F493F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C45E1FE8091C687D516A07A /* Pods-FlickaloreUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

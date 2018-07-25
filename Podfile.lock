@@ -1,0 +1,24 @@
+PODS:
+  - FlickrKit (1.0.9)
+  - Kingfisher (4.8.0)
+  - Toast-Swift (3.0.1)
+
+DEPENDENCIES:
+  - FlickrKit
+  - Kingfisher (~> 4.0)
+  - Toast-Swift (~> 3.0.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FlickrKit
+    - Kingfisher
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  FlickrKit: 79ffaf64a12293ba2b1aa8a2e53a4958cb113256
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
+
+PODFILE CHECKSUM: a7e49c3226468f04a0613d93a66158398cc4ca52
+
+COCOAPODS: 1.5.3
