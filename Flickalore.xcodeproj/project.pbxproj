@@ -9,8 +9,15 @@
 /* Begin PBXBuildFile section */
 		319379B67D532F67D15312B9 /* Pods_FlickaloreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2582A66B543F611063FAE2 /* Pods_FlickaloreUITests.framework */; };
 		71DCB029F0E0B0EAE564229C /* Pods_FlickaloreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8558CCD117056488E0CCCF8 /* Pods_FlickaloreTests.framework */; };
+		7B283579210C4F9700849FAB /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B283578210C4F9700849FAB /* AuthenticationViewController.swift */; };
+		7B28357B210C55D000849FAB /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28357A210C55D000849FAB /* AuthViewModel.swift */; };
+		7B28357D210C5DAF00849FAB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28357C210C5DAF00849FAB /* Constants.swift */; };
+		7B28357F210C7B9B00849FAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28357E210C7B9B00849FAB /* User.swift */; };
+		7B283581210C7D9800849FAB /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B283580210C7D9800849FAB /* UserManager.swift */; };
+		7B283583210C80F000849FAB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B283582210C80F000849FAB /* Extensions.swift */; };
+		7B283585210C932000849FAB /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B283584210C932000849FAB /* StoryboardInitializable.swift */; };
 		7B6AE2212108923F00F493F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE2202108923F00F493F4 /* AppDelegate.swift */; };
-		7B6AE2232108924000F493F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE2222108924000F493F4 /* ViewController.swift */; };
+		7B6AE2232108924000F493F4 /* LoginWithFlickrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE2222108924000F493F4 /* LoginWithFlickrViewController.swift */; };
 		7B6AE2262108924000F493F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6AE2242108924000F493F4 /* Main.storyboard */; };
 		7B6AE2282108924800F493F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B6AE2272108924800F493F4 /* Assets.xcassets */; };
 		7B6AE22B2108924800F493F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6AE2292108924800F493F4 /* LaunchScreen.storyboard */; };
@@ -43,9 +50,16 @@
 		22B5E1F3FBD2D977FF59B73C /* Pods_Flickalore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flickalore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C5F268DB62D55AA9D5C4C8 /* Pods-Flickalore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickalore.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flickalore/Pods-Flickalore.release.xcconfig"; sourceTree = "<group>"; };
 		6E2582A66B543F611063FAE2 /* Pods_FlickaloreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickaloreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B283578210C4F9700849FAB /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		7B28357A210C55D000849FAB /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		7B28357C210C5DAF00849FAB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7B28357E210C7B9B00849FAB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7B283580210C7D9800849FAB /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		7B283582210C80F000849FAB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7B283584210C932000849FAB /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
 		7B6AE21D2108923F00F493F4 /* Flickalore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flickalore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6AE2202108923F00F493F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B6AE2222108924000F493F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B6AE2222108924000F493F4 /* LoginWithFlickrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithFlickrViewController.swift; sourceTree = "<group>"; };
 		7B6AE2252108924000F493F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B6AE2272108924800F493F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B6AE22A2108924800F493F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -130,12 +144,19 @@
 			isa = PBXGroup;
 			children = (
 				7B6AE2202108923F00F493F4 /* AppDelegate.swift */,
-				7B6AE2222108924000F493F4 /* ViewController.swift */,
+				7B6AE2222108924000F493F4 /* LoginWithFlickrViewController.swift */,
 				7B6AE2242108924000F493F4 /* Main.storyboard */,
 				7B6AE2272108924800F493F4 /* Assets.xcassets */,
 				7B6AE2292108924800F493F4 /* LaunchScreen.storyboard */,
 				7B6AE22C2108924800F493F4 /* Info.plist */,
 				7B6AE24E2108CB4400F493F4 /* PinchZoomViewController.swift */,
+				7B283578210C4F9700849FAB /* AuthenticationViewController.swift */,
+				7B28357A210C55D000849FAB /* AuthViewModel.swift */,
+				7B28357C210C5DAF00849FAB /* Constants.swift */,
+				7B28357E210C7B9B00849FAB /* User.swift */,
+				7B283580210C7D9800849FAB /* UserManager.swift */,
+				7B283582210C80F000849FAB /* Extensions.swift */,
+				7B283584210C932000849FAB /* StoryboardInitializable.swift */,
 			);
 			path = Flickalore;
 			sourceTree = "<group>";
@@ -382,9 +403,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B6AE2232108924000F493F4 /* ViewController.swift in Sources */,
+				7B28357B210C55D000849FAB /* AuthViewModel.swift in Sources */,
+				7B283583210C80F000849FAB /* Extensions.swift in Sources */,
+				7B283579210C4F9700849FAB /* AuthenticationViewController.swift in Sources */,
+				7B6AE2232108924000F493F4 /* LoginWithFlickrViewController.swift in Sources */,
 				7B6AE2212108923F00F493F4 /* AppDelegate.swift in Sources */,
 				7B6AE24F2108CB4400F493F4 /* PinchZoomViewController.swift in Sources */,
+				7B283585210C932000849FAB /* StoryboardInitializable.swift in Sources */,
+				7B28357D210C5DAF00849FAB /* Constants.swift in Sources */,
+				7B283581210C7D9800849FAB /* UserManager.swift in Sources */,
+				7B28357F210C7B9B00849FAB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
