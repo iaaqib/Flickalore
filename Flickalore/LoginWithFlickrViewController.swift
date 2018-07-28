@@ -10,23 +10,34 @@ import UIKit
 
 class LoginWithFlickrViewController: UIViewController {
 
+    let viewModel = LoginViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        setupViewModelCallback()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print(#function)
-        
+        viewModel.isUserLoggedIn()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
        
-        if UserManager.shared.isUserLoggedIn {
+//        viewModel.isUserLoggedIn { [weak self] in
+//            let tabBarController = UITabBarController.instantiateViewController()
+//            self?.present(tabBarController, animated: true)
+//        }
+       
+    }
+    
+    func setupViewModelCallback() {
+        viewModel.isLoggedIn = { [weak self] in
             let tabBarController = UITabBarController.instantiateViewController()
-            present(tabBarController, animated: true)
+            self?.present(tabBarController, animated: true)
         }
     }
 

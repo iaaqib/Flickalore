@@ -1,5 +1,5 @@
 //
-//  StoryboardInitializable.swift
+//  Initializable.swift
 //  Flickalore
 //
 //  Created by Aaqib Hussain on 28/7/18.
@@ -8,10 +8,15 @@
 
 import UIKit
 
-protocol StoryboardInitializable {
+protocol Initializable {
     static var storyboardIdentifier: String { get }
     static var storyboardName: UIStoryboard.Storyboard { get }
     static func instantiateViewController() -> Self
+}
+
+protocol NavigationBar {
+    static func showNavigationBar()
+    static func hideNavigationBar()
 }
 
 

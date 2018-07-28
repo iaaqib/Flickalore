@@ -49,6 +49,11 @@ class AuthenticationViewController: UIViewController {
            guard let `self` = self else { fatalError("self is nil") }
             self.webView.loadRequest(request)
         }
+        
+        viewModel.dimiss = { [weak self] in
+           guard let `self` = self else { fatalError("self is nil") }
+            self.dismiss(animated: true)
+        }
     }
     
     @IBAction func dismissViewController(sender: UIButton) {
@@ -63,13 +68,10 @@ extension AuthenticationViewController: UIWebViewDelegate {
         //If URL scheme matches then try to do the Auth process
         if let scheme = url?.scheme, scheme == Constants.FlickrConstants.flickalore.string {
             if let token = url {
-                
-            viewModel.checkAuthentication(token: token)
-            self.dismiss(animated: true)
+            viewModel.getUserInfoWith(token: token)
             }
         } else if url?.absoluteString == Constants.FlickrConstants.flickrHome.string {
             self.dismiss(animated: true)
-          
         }
         return true
     }

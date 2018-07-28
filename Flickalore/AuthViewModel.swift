@@ -16,11 +16,13 @@ class AuthViewModel: NSObject {
     init(flickrKit: FlickrKit = FlickrKit.shared()) {
         self.flickrKit = flickrKit
         self.loadRequest = { _ in }
+        self.dimiss = {  }
     }
     
     var loadRequest: ((_ request: URLRequest) -> ())
     var loader: ((_ status: Bool) -> ())? = nil
     var showMessage: ((_ message: String) -> ())? = nil
+    var dimiss: ()->()
     
     func authenticate() {
         guard let callbackUrl = URL(string: Constants.FlickrConstants.flickrCallbackString.string) else { return }
@@ -43,17 +45,18 @@ class AuthViewModel: NSObject {
         }
     }
     
-    func checkAuthentication(token: URL) {
+    func getUserInfoWith(token: URL) {
+        loader?(true)
         flickrKit.completeAuth(with: token, completion: { (userName, userId, fullName, error) -> Void in
             DispatchQueue.main.async(execute: { [weak self] () -> Void in
                 guard let `self` = self else { return }
-                
+        self.loader?(false)
                 if let error = error {
                     self.showMessage?(error.localizedDescription)
                 } else {
                     let authenticatedUser =  User(userName: userName ?? "NA", name: fullName ?? "NA", userId: userId ?? "NA", accessToken: token)
                     UserManager.shared.setUser(user: authenticatedUser)
-                    
+                    self.dimiss()
                 } })
         })
         

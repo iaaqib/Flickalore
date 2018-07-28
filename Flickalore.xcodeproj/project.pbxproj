@@ -15,7 +15,12 @@
 		7B28357F210C7B9B00849FAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28357E210C7B9B00849FAB /* User.swift */; };
 		7B283581210C7D9800849FAB /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B283580210C7D9800849FAB /* UserManager.swift */; };
 		7B283583210C80F000849FAB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B283582210C80F000849FAB /* Extensions.swift */; };
-		7B283585210C932000849FAB /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B283584210C932000849FAB /* StoryboardInitializable.swift */; };
+		7B283587210C981E00849FAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B283586210C981E00849FAB /* ProfileViewController.swift */; };
+		7B283589210C98D900849FAB /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B283588210C98D900849FAB /* ProfileViewModel.swift */; };
+		7B28358C210CACD400849FAB /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28358A210CACD400849FAB /* ImageCollectionViewCell.swift */; };
+		7B28358D210CACD400849FAB /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B28358B210CACD400849FAB /* ImageCollectionViewCell.xib */; };
+		7B28358F210CAFC700849FAB /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28358E210CAFC700849FAB /* Initializable.swift */; };
+		7B283591210CC80700849FAB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B283590210CC80700849FAB /* LoginViewModel.swift */; };
 		7B6AE2212108923F00F493F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE2202108923F00F493F4 /* AppDelegate.swift */; };
 		7B6AE2232108924000F493F4 /* LoginWithFlickrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE2222108924000F493F4 /* LoginWithFlickrViewController.swift */; };
 		7B6AE2262108924000F493F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6AE2242108924000F493F4 /* Main.storyboard */; };
@@ -56,7 +61,12 @@
 		7B28357E210C7B9B00849FAB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7B283580210C7D9800849FAB /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		7B283582210C80F000849FAB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		7B283584210C932000849FAB /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
+		7B283586210C981E00849FAB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7B283588210C98D900849FAB /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		7B28358A210CACD400849FAB /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		7B28358B210CACD400849FAB /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		7B28358E210CAFC700849FAB /* Initializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initializable.swift; sourceTree = "<group>"; };
+		7B283590210CC80700849FAB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		7B6AE21D2108923F00F493F4 /* Flickalore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flickalore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6AE2202108923F00F493F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B6AE2222108924000F493F4 /* LoginWithFlickrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithFlickrViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +153,7 @@
 		7B6AE21F2108923F00F493F4 /* Flickalore */ = {
 			isa = PBXGroup;
 			children = (
+				7B28358E210CAFC700849FAB /* Initializable.swift */,
 				7B6AE2202108923F00F493F4 /* AppDelegate.swift */,
 				7B6AE2222108924000F493F4 /* LoginWithFlickrViewController.swift */,
 				7B6AE2242108924000F493F4 /* Main.storyboard */,
@@ -156,7 +167,11 @@
 				7B28357E210C7B9B00849FAB /* User.swift */,
 				7B283580210C7D9800849FAB /* UserManager.swift */,
 				7B283582210C80F000849FAB /* Extensions.swift */,
-				7B283584210C932000849FAB /* StoryboardInitializable.swift */,
+				7B283586210C981E00849FAB /* ProfileViewController.swift */,
+				7B283588210C98D900849FAB /* ProfileViewModel.swift */,
+				7B28358A210CACD400849FAB /* ImageCollectionViewCell.swift */,
+				7B28358B210CACD400849FAB /* ImageCollectionViewCell.xib */,
+				7B283590210CC80700849FAB /* LoginViewModel.swift */,
 			);
 			path = Flickalore;
 			sourceTree = "<group>";
@@ -299,6 +314,7 @@
 			files = (
 				7B6AE22B2108924800F493F4 /* LaunchScreen.storyboard in Resources */,
 				7B6AE2282108924800F493F4 /* Assets.xcassets in Resources */,
+				7B28358D210CACD400849FAB /* ImageCollectionViewCell.xib in Resources */,
 				7B6AE2262108924000F493F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,13 +419,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B28358F210CAFC700849FAB /* Initializable.swift in Sources */,
 				7B28357B210C55D000849FAB /* AuthViewModel.swift in Sources */,
 				7B283583210C80F000849FAB /* Extensions.swift in Sources */,
+				7B28358C210CACD400849FAB /* ImageCollectionViewCell.swift in Sources */,
 				7B283579210C4F9700849FAB /* AuthenticationViewController.swift in Sources */,
 				7B6AE2232108924000F493F4 /* LoginWithFlickrViewController.swift in Sources */,
+				7B283591210CC80700849FAB /* LoginViewModel.swift in Sources */,
 				7B6AE2212108923F00F493F4 /* AppDelegate.swift in Sources */,
 				7B6AE24F2108CB4400F493F4 /* PinchZoomViewController.swift in Sources */,
-				7B283585210C932000849FAB /* StoryboardInitializable.swift in Sources */,
+				7B283589210C98D900849FAB /* ProfileViewModel.swift in Sources */,
+				7B283587210C981E00849FAB /* ProfileViewController.swift in Sources */,
 				7B28357D210C5DAF00849FAB /* Constants.swift in Sources */,
 				7B283581210C7D9800849FAB /* UserManager.swift in Sources */,
 				7B28357F210C7B9B00849FAB /* User.swift in Sources */,
@@ -587,6 +607,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8M8EB3JWC4;
 				INFOPLIST_FILE = Flickalore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -605,6 +626,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8M8EB3JWC4;
 				INFOPLIST_FILE = Flickalore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

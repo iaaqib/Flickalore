@@ -30,7 +30,7 @@ extension UIStoryboard {
     }
 }
 
-extension StoryboardInitializable where Self: UIViewController {
+extension Initializable where Self: UIViewController {
     static var storyboardIdentifier: String {
         return String(describing: self)
     }
@@ -45,4 +45,29 @@ extension StoryboardInitializable where Self: UIViewController {
     }
 }
 
-extension UIViewController: StoryboardInitializable {}
+extension UIViewController: Initializable {}
+
+extension UICollectionView {
+    
+    func register<T: UICollectionViewCell>(_: T.Type) {
+        let nib = UINib(nibName: T.className, bundle: nil)
+        register(nib, forCellWithReuseIdentifier: T.className)
+    }
+    
+}
+
+extension UINavigationController {
+    
+    public func hideTransparentNavigationBar() {
+    //navigationBar.setBackgroundImage(UINavigationBar().backgroundImage(for: .default), for: .default)
+    //navigationBar.shadowImage = UINavigationBar().shadowImage
+    setNavigationBarHidden(false, animated: true)
+    }
+
+    public func presentTransparentNavigationBar() {
+    //    navigationBar.setBackgroundImage(UIImage(), for: .default)
+    //    navigationBar.shadowImage = UIImage()
+        setNavigationBarHidden(true, animated: true)
+    }
+}
+

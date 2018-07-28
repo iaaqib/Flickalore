@@ -31,5 +31,8 @@ class UserManager: NSObject {
         return loggedInUser
     }
     
+    func deleteUser() {
+        userDefaults.removeObject(forKey: User.className)
+    }
     
 }
