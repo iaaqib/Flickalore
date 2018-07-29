@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6rs-FY-LJV">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="165" width="375" height="453"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="6H6-tM-g6i">
                                     <size key="itemSize" width="50" height="50"/>
@@ -34,13 +34,39 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="x49-3q-WKc"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3V-ac-IzD">
+                                <rect key="frame" x="0.0" y="164" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="CNp-ly-WqT"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FullName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9d-kR-NWf">
+                                <rect key="frame" x="10" y="74" width="90" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0d-GP-EBu">
+                                <rect key="frame" x="10" y="108" width="98.5" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.49019607840000001" green="0.80392156859999997" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="6rs-FY-LJV" firstAttribute="top" secondItem="k3V-ac-IzD" secondAttribute="bottom" id="3FG-Qj-Ydd"/>
                             <constraint firstItem="6rs-FY-LJV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="49o-vW-N7N"/>
+                            <constraint firstItem="i9d-kR-NWf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="81J-MB-qAx"/>
+                            <constraint firstItem="G0d-GP-EBu" firstAttribute="top" secondItem="i9d-kR-NWf" secondAttribute="bottom" constant="10" id="BjC-XF-2Ix"/>
+                            <constraint firstAttribute="trailing" secondItem="k3V-ac-IzD" secondAttribute="trailing" id="Kbr-6x-YuP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6rs-FY-LJV" secondAttribute="bottom" id="dJf-V2-WSt"/>
+                            <constraint firstItem="i9d-kR-NWf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="dTD-i9-1Vb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6rs-FY-LJV" secondAttribute="trailing" id="ex0-4Z-RTB"/>
-                            <constraint firstItem="6rs-FY-LJV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="s4X-iE-Xwc"/>
+                            <constraint firstItem="k3V-ac-IzD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ug2-LA-5sr"/>
+                            <constraint firstItem="k3V-ac-IzD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uzb-Vh-tcj"/>
+                            <constraint firstItem="G0d-GP-EBu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="yet-UX-ad3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -55,6 +81,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="6rs-FY-LJV" id="xdV-zQ-aq8"/>
+                        <outlet property="fullNameLabel" destination="i9d-kR-NWf" id="VU6-Gp-3Wq"/>
+                        <outlet property="userNameLabel" destination="G0d-GP-EBu" id="nd8-kB-wfo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -142,11 +170,11 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Profile-->
         <scene sceneID="TqO-ed-rnv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vdp-5z-k6O" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="profile" id="wap-QH-hES"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" landscapeImage="profile" id="wap-QH-hES"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mrR-av-nur">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -213,11 +241,11 @@
             </objects>
             <point key="canvasLocation" x="1926" y="731"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Explore-->
         <scene sceneID="YkC-kW-tTw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xhW-lZ-w4j" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="compass" id="Yqw-cB-9eD">
+                    <tabBarItem key="tabBarItem" title="Explore" image="explore" landscapeImage="explore" id="Yqw-cB-9eD">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -324,7 +352,7 @@
                                 </connections>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMb-ce-L0Q">
-                                <rect key="frame" x="15" y="30" width="24" height="22.5"/>
+                                <rect key="frame" x="15" y="30" width="24" height="22"/>
                                 <state key="normal" image="close"/>
                                 <connections>
                                     <action selector="dismissViewControllerWithSender:" destination="qsK-Mt-2X3" eventType="touchUpInside" id="kFh-u0-z3K"/>
@@ -378,10 +406,10 @@
     </scenes>
     <resources>
         <image name="close" width="256" height="256"/>
-        <image name="compass" width="30" height="30"/>
+        <image name="explore" width="32" height="32"/>
         <image name="gallery" width="512" height="512"/>
         <image name="left-arrow" width="64" height="64"/>
         <image name="logout" width="32" height="32"/>
-        <image name="profile" width="30" height="30"/>
+        <image name="profile" width="32" height="32"/>
     </resources>
 </document>

@@ -12,7 +12,7 @@ import FlickrKit
 class ProfileViewModel: NSObject {
     
     private let flickrKit: FlickrKit
-    private let user = UserManager.shared.getLoggedInUser()!
+    let user = UserManager.shared.getLoggedInUser()!
     private lazy var photoURLs: [URL] = []
     
     var reloadCollectionView: () -> ()

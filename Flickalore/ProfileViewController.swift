@@ -11,19 +11,26 @@ import UIKit
 class ProfileViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var fullNameLabel: UILabel!
+    @IBOutlet weak var userNameLabel: UILabel!
     
     let viewModel = ProfileViewModel()
     
+    var widthForItem: CGFloat = Constants.screenBounds.width / 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         collectionView.register(ImageCollectionViewCell.self)
         setupViewModelCallbacks()
-        
+        setupViews()
         viewModel.getPhotos()
     }
-   
+
+    private func setupViews() {
+        fullNameLabel.text = "Welcome \(viewModel.user.name)"
+        userNameLabel.text = viewModel.user.userName
+    }
 
     private func setupViewModelCallbacks() {
         viewModel.loader = { [weak self] state in
@@ -69,12 +76,25 @@ extension ProfileViewController: UICollectionViewDelegate {
         zoomViewController.image = selectedImage
         navigationController?.pushViewController(zoomViewController, animated: true)
     }
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        
+        let portraitSize = Constants.screenBounds.size
+        
+        if size == portraitSize {
+           self.widthForItem = size.width / 3
+        } else {
+           self.widthForItem = size.width / 3
+        }
+            print(self.widthForItem)
+            self.collectionView.reloadData()
+        
+    }
 }
 
 extension ProfileViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = Constants.screenBounds.width / 3
-        return CGSize(width: width , height: width )
+        
+        return CGSize(width: widthForItem , height: widthForItem )
     }
 }
 
