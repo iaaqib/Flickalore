@@ -59,14 +59,10 @@ extension UICollectionView {
 extension UINavigationController {
     
     public func hideTransparentNavigationBar() {
-    //navigationBar.setBackgroundImage(UINavigationBar().backgroundImage(for: .default), for: .default)
-    //navigationBar.shadowImage = UINavigationBar().shadowImage
-    setNavigationBarHidden(false, animated: true)
+        setNavigationBarHidden(false, animated: true)
     }
-
+    
     public func presentTransparentNavigationBar() {
-    //    navigationBar.setBackgroundImage(UIImage(), for: .default)
-    //    navigationBar.shadowImage = UIImage()
         setNavigationBarHidden(true, animated: true)
     }
 }

@@ -9,43 +9,38 @@
 import UIKit
 
 class PinchZoomViewController: UIViewController {
-
+    // MARK: - Outlets
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
-    
+    // MARK: - Var
     var image: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
+    }
+    // MARK: - Function
+    private func setupViews() {
         scrollView.minimumZoomScale = 1.0
         scrollView.maximumZoomScale = 6.0
-        
-        self.imageView.image = image
+        imageView.image = image
     }
-    
+    // MARK: - Action
     @IBAction func backAction(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
     
     override func willMove(toParentViewController parent: UIViewController?) {
-        print(parent)
         if parent == nil {
-//    navigationController?.navigationBar.setBackgroundImage(UINavigationBar().backgroundImage(for: .default), for: .default)
-//        navigationController?.navigationBar.shadowImage = UINavigationBar().shadowImage
-//        navigationController?.setNavigationBarHidden(true, animated: true)
             self.navigationController?.hideTransparentNavigationBar()
-           
         } else {
              self.navigationController?.presentTransparentNavigationBar()
-//        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//        navigationController?.navigationBar.shadowImage = UIImage()
-//        navigationController?.setNavigationBarHidden(true, animated: true)
         }
     }
     
 }
+// MARK: - ScrollView Delegate
 extension PinchZoomViewController: UIScrollViewDelegate {
-    
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }

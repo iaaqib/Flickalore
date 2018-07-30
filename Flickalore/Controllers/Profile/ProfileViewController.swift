@@ -1,30 +1,38 @@
 //
-//  ExploreViewController.swift
+//  ProfileViewController.swift
 //  Flickalore
 //
-//  Created by Aaqib Hussain on 29/7/18.
+//  Created by Aaqib Hussain on 28/7/18.
 //  Copyright © 2018 Aaqib Hussain. All rights reserved.
 //
 
 import UIKit
 
-class ExploreViewController: UIViewController {
-
+class ProfileViewController: UIViewController {
+    //MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
-    var widthForItem: CGFloat = Constants.screenBounds.width / 3
+    @IBOutlet weak var fullNameLabel: UILabel!
+    @IBOutlet weak var userNameLabel: UILabel!
     
-    let viewModel = ExploreViewModel()
-    let refreshControl = UIRefreshControl()
+    //MARK: - Vars
+    let viewModel = ProfileViewModel()
+    //Width for each cell
+    var widthForItem: CGFloat = Constants.screenBounds.width / 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        collectionView.register(ImageCollectionViewCell.self)
         setupViewModelCallbacks()
-        viewModel.getExplore()
-        
+        setupViews()
+        viewModel.loadPhotos()
     }
-    
+    //MARK: - Private
+    //UI Setup
+    private func setupViews() {
+        fullNameLabel.text = "Welcome \(viewModel.user.name)!"
+        userNameLabel.text = viewModel.user.userName
+        collectionView.register(ImageCollectionViewCell.self)
+    }
+
     private func setupViewModelCallbacks() {
         viewModel.loader = { [weak self] state in
             guard let `self` = self else { fatalError("self is nil") }
@@ -38,22 +46,32 @@ class ExploreViewController: UIViewController {
         
         viewModel.showMessage = { [weak self] message in
             guard let `self` = self else { fatalError("self is nil") }
-            self.view.makeToast(message, duration: 0.4, position: .center)
+            self.view.makeToast(message, duration: 1, position: .center)
         }
         
         viewModel.reloadCollectionView = { [weak self] in
-            guard let `self` = self else { fatalError("self is nil") }
+         guard let `self` = self else { fatalError("self is nil") }
             self.collectionView.reloadData()
         }
     }
-    
+    //MARK: - Action
+    @IBAction func logOutAction(_ sender: UIBarButtonItem) {
+        viewModel.logout()
+        tabBarController?.dismiss(animated: true, completion: {
+            let loginViewController = LoginWithFlickrViewController.instantiateViewController()
+            UIApplication.shared.delegate?.window??.rootViewController = loginViewController
+        })
+        
+    }
+    //MARK: - Orientation Changed
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         widthForItem = size.width / 3
         collectionView.reloadData()
+        
     }
-    
 }
-extension ExploreViewController: UICollectionViewDataSource {
+//MARK: - CollectionView Datasource
+extension ProfileViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numberOfItems
@@ -66,7 +84,8 @@ extension ExploreViewController: UICollectionViewDataSource {
         return cell
     }
 }
-extension ExploreViewController: UICollectionViewDelegate {
+//MARK: - CollectionView Delegate
+extension ProfileViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! ImageCollectionViewCell
         let selectedImage = cell.imageView.image
@@ -74,18 +93,11 @@ extension ExploreViewController: UICollectionViewDelegate {
         zoomViewController.image = selectedImage
         navigationController?.pushViewController(zoomViewController, animated: true)
     }
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        viewModel.loadMore(index: indexPath.row)
-    }
-    
 }
-
-extension ExploreViewController: UICollectionViewDelegateFlowLayout {
+//MARK: - CollectionView FlowLayout
+extension ProfileViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return CGSize(width: widthForItem , height: widthForItem )
+        return CGSize(width: widthForItem, height: widthForItem)
     }
 }
-
 

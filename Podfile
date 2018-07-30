@@ -9,6 +9,7 @@ target 'Flickalore' do
 pod 'FlickrKit'
 pod 'Kingfisher', '~> 4.0'
 pod 'Toast-Swift', '~> 3.0.1'
+pod 'ReachabilitySwift'
 
   target 'FlickaloreTests' do
     inherit! :search_paths

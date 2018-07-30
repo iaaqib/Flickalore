@@ -10,20 +10,22 @@ import UIKit
 import FlickrKit
 
 class AuthViewModel: NSObject {
-    
+    // MARK: - Vars
     private let flickrKit: FlickrKit
-    
+    //Callback to update UI
+    var loadRequest: ((_ request: URLRequest) -> ())
+    var loader: ((_ status: Bool) -> ())? = nil
+    var showMessage: ((_ message: String) -> ())? = nil
+    var dimiss: ()->()
+    // MARK: - Initializer
     init(flickrKit: FlickrKit = FlickrKit.shared()) {
         self.flickrKit = flickrKit
         self.loadRequest = { _ in }
         self.dimiss = {  }
     }
     
-    var loadRequest: ((_ request: URLRequest) -> ())
-    var loader: ((_ status: Bool) -> ())? = nil
-    var showMessage: ((_ message: String) -> ())? = nil
-    var dimiss: ()->()
-    
+    // MARK: - Functions
+    //loads the yahoo login
     func authenticate() {
         guard let callbackUrl = URL(string: Constants.FlickrConstants.flickrCallbackString.string) else { return }
         loader?(true)
@@ -44,13 +46,13 @@ class AuthViewModel: NSObject {
             }
         }
     }
-    
+    //fetches user info once token is received
     func getUserInfoWith(token: URL) {
         loader?(true)
         flickrKit.completeAuth(with: token, completion: { (userName, userId, fullName, error) -> Void in
             DispatchQueue.main.async(execute: { [weak self] () -> Void in
                 guard let `self` = self else { return }
-        self.loader?(false)
+                self.loader?(false)
                 if let error = error {
                     self.showMessage?(error.localizedDescription)
                 } else {
@@ -59,7 +61,5 @@ class AuthViewModel: NSObject {
                     self.dimiss()
                 } })
         })
-        
-        
     }
 }

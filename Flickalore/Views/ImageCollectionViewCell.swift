@@ -16,10 +16,4 @@ class ImageCollectionViewCell: UICollectionViewCell {
     func item(url: URL) {
         imageView.kf.setImage(with: url, placeholder: #imageLiteral(resourceName: "gallery"))
     }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
 }

@@ -9,13 +9,10 @@
 import UIKit
 
 class UserManager: NSObject {
-
+    
     static let shared = UserManager()
-    
     private let userDefaults = UserDefaults.standard
-    
     private override init() { }
-    
     var isUserLoggedIn: Bool {
         return getLoggedInUser() != nil
     }

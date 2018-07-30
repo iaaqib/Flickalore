@@ -11,6 +11,7 @@ import UIKit
 class Constants: NSObject {
 
     static let screenBounds = UIScreen.main.bounds
+    static let internetConnectivityMessage = "Please connect to internet and try again!"
     
     enum APIKeys: String {
         case apiKey = "5439af32e3b717c28e0434f84c57cf5a"

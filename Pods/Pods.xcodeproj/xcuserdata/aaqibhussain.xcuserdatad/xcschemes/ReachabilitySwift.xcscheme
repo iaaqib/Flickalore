@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C9A2085B2448D52314729DBBDC73B941"
-               BuildableName = "Pods_Flickalore.framework"
-               BlueprintName = "Pods-Flickalore"
+               BlueprintIdentifier = "C3DF0959C98A00D0A1EACE925ACED3F0"
+               BuildableName = "Reachability.framework"
+               BlueprintName = "ReachabilitySwift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C9A2085B2448D52314729DBBDC73B941"
-            BuildableName = "Pods_Flickalore.framework"
-            BlueprintName = "Pods-Flickalore"
+            BlueprintIdentifier = "C3DF0959C98A00D0A1EACE925ACED3F0"
+            BuildableName = "Reachability.framework"
+            BlueprintName = "ReachabilitySwift"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -14,9 +14,4 @@ protocol Initializable {
     static func instantiateViewController() -> Self
 }
 
-protocol NavigationBar {
-    static func showNavigationBar()
-    static func hideNavigationBar()
-}
-
 
