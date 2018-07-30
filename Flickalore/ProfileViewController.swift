@@ -43,6 +43,11 @@ class ProfileViewController: UIViewController {
             }
         }
         
+        viewModel.showMessage = { [weak self] message in
+            guard let `self` = self else { fatalError("self is nil") }
+            self.view.makeToast(message, duration: 0.4, position: .center)
+        }
+        
         viewModel.reloadCollectionView = { [weak self] in
          guard let `self` = self else { fatalError("self is nil") }
             self.collectionView.reloadData()
@@ -54,6 +59,11 @@ class ProfileViewController: UIViewController {
         tabBarController?.dismiss(animated: true, completion: nil)
     }
 
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        widthForItem = size.width / 3
+        collectionView.reloadData()
+        
+    }
 }
 extension ProfileViewController: UICollectionViewDataSource {
    
@@ -75,19 +85,6 @@ extension ProfileViewController: UICollectionViewDelegate {
         let zoomViewController = PinchZoomViewController.instantiateViewController()
         zoomViewController.image = selectedImage
         navigationController?.pushViewController(zoomViewController, animated: true)
-    }
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        
-        let portraitSize = Constants.screenBounds.size
-        
-        if size == portraitSize {
-           self.widthForItem = size.width / 3
-        } else {
-           self.widthForItem = size.width / 3
-        }
-            print(self.widthForItem)
-            self.collectionView.reloadData()
-        
     }
 }
 

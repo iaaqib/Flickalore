@@ -71,3 +71,14 @@ extension UINavigationController {
     }
 }
 
+extension Int {
+    var toString: String {
+        return String(describing: self)
+    }
+}
+
+extension String {
+    var toInt: Int {
+        return Int(self)!
+    }
+}

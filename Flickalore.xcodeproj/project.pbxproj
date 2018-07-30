@@ -29,6 +29,7 @@
 		7B6AE2362108924900F493F4 /* FlickaloreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE2352108924900F493F4 /* FlickaloreTests.swift */; };
 		7B6AE2412108924900F493F4 /* FlickaloreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE2402108924900F493F4 /* FlickaloreUITests.swift */; };
 		7B6AE24F2108CB4400F493F4 /* PinchZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE24E2108CB4400F493F4 /* PinchZoomViewController.swift */; };
+		7B9F6631210EC65B00E29216 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F6630210EC65B00E29216 /* ExploreViewModel.swift */; };
 		7BFD5C45210E44F3003FB19E /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD5C44210E44F3003FB19E /* ExploreViewController.swift */; };
 		90E6D9498023000DA0073814 /* Pods_Flickalore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5E1F3FBD2D977FF59B73C /* Pods_Flickalore.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,7 @@
 		7B6AE2402108924900F493F4 /* FlickaloreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickaloreUITests.swift; sourceTree = "<group>"; };
 		7B6AE2422108924900F493F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B6AE24E2108CB4400F493F4 /* PinchZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchZoomViewController.swift; sourceTree = "<group>"; };
+		7B9F6630210EC65B00E29216 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		7BFD5C44210E44F3003FB19E /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		96367767241CA0ACA2716332 /* Pods-FlickaloreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickaloreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickaloreTests/Pods-FlickaloreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF2ED687DEA6831A39CBAC9B /* Pods-FlickaloreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickaloreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlickaloreTests/Pods-FlickaloreTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				7B28358B210CACD400849FAB /* ImageCollectionViewCell.xib */,
 				7B283590210CC80700849FAB /* LoginViewModel.swift */,
 				7BFD5C44210E44F3003FB19E /* ExploreViewController.swift */,
+				7B9F6630210EC65B00E29216 /* ExploreViewModel.swift */,
 			);
 			path = Flickalore;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				7B6AE24F2108CB4400F493F4 /* PinchZoomViewController.swift in Sources */,
 				7B283589210C98D900849FAB /* ProfileViewModel.swift in Sources */,
 				7B283587210C981E00849FAB /* ProfileViewController.swift in Sources */,
+				7B9F6631210EC65B00E29216 /* ExploreViewModel.swift in Sources */,
 				7B28357D210C5DAF00849FAB /* Constants.swift in Sources */,
 				7B283581210C7D9800849FAB /* UserManager.swift in Sources */,
 				7B28357F210C7B9B00849FAB /* User.swift in Sources */,
