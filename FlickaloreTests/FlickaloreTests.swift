@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import Flickalore
+import FlickrKit
 
 class FlickaloreTests: XCTestCase {
     
@@ -21,16 +22,30 @@ class FlickaloreTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testProfileModel() {
+        let dummyNumberOfItems = 8
+        let dummyUrlAtIndexZero = "https://farm1.static.flickr.com/269/19866604203_d4844b464d_n.jpg"
+        let dummyUrlAtIndexSeven = "https://farm9.static.flickr.com/8586/16654466322_2292749dcd_n.jpg"
+        let mockModel = MockFlickrKit()
+        let profileViewModel = ProfileViewModel(flickrKit: mockModel)
+        profileViewModel.getPhotos()
+        XCTAssertEqual(dummyNumberOfItems, profileViewModel.numberOfItems)
+        XCTAssertEqual(dummyUrlAtIndexZero, profileViewModel.itemAtIndex(index: 0).absoluteString)
+        XCTAssertEqual(dummyUrlAtIndexSeven, profileViewModel.itemAtIndex(index: 7).absoluteString)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testExploreModel() {
+        
+        let dummyUrlAtZeroIndex = "https://farm1.static.flickr.com/941/29840068448_348f60c2a4_n.jpg"
+        let dummyUrlAtFourthIndex = "https://farm1.static.flickr.com/930/29852550978_f89573be44_n.jpg"
+        let dummyDataCount = 5
+        let mockModel = MockFlickrKit()
+        let exploreViewModel = ExploreViewModel(flickrKit: mockModel)
+            exploreViewModel.getExplore()
+        XCTAssertEqual(dummyDataCount, exploreViewModel.numberOfItems)
+        XCTAssertEqual(dummyUrlAtZeroIndex, exploreViewModel.itemAtIndex(index: 0).absoluteString)
+        XCTAssertEqual(dummyUrlAtFourthIndex, exploreViewModel.itemAtIndex(index: 4).absoluteString)
         }
-    }
-    
+        
 }
+

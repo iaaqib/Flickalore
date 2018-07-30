@@ -406,11 +406,11 @@
             </objects>
             <point key="canvasLocation" x="1998" y="355"/>
         </scene>
-        <!--EXPLORE-->
+        <!--Explore-->
         <scene sceneID="mx3-7L-mHb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tCx-b7-QvZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="EXPLORE" image="explore" landscapeImage="explore" id="5wN-cd-Tbb"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="explore" landscapeImage="explore" id="5wN-cd-Tbb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="K6O-fG-v03">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

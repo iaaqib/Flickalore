@@ -79,11 +79,13 @@ class ProfileViewModel: NSObject {
                     self.showMessage?(error.localizedDescription)
                 }
             } else if let response = response, let photoArray = self.flickrKit.photoArray(fromResponse: response) {
+                
                 photoArray.forEach({ (photoDictionary) in
                     let photoURL = self.flickrKit.photoURL(for: FKPhotoSize.small320, fromPhotoDictionary: photoDictionary)
                     
                     self.photoURLs.append(photoURL)
                 })
+                print(self.photoURLs)
                 DispatchQueue.main.async {
                     self.loader?(false)
                     self.reloadCollectionView()

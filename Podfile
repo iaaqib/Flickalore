@@ -14,6 +14,7 @@ pod 'ReachabilitySwift'
   target 'FlickaloreTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'FlickrKit'
   end
 
   target 'FlickaloreUITests' do

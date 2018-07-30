@@ -53,7 +53,7 @@ class ExploreViewModel: NSObject {
         }
     }
     
-    private func getExplore(page: String = "1") {
+    func getExplore(page: String = "1") {
         loader?(true)
         let flickrInteresting = FKFlickrInterestingnessGetList()
         flickrInteresting.per_page = "20"
@@ -70,10 +70,12 @@ class ExploreViewModel: NSObject {
                 if let pages = response["photos"] as? NSDictionary, let totalPages = pages["pages"] as? Int {
                     self.totalPages = totalPages.toString
                 }
+                print(photoArray)
                 photoArray.forEach({ photoDictionary in
                     let photoURL = self.flickrKit.photoURL(for: FKPhotoSize.small320 , fromPhotoDictionary: photoDictionary)
                     self.photoURLs.append(photoURL)
                 })
+                print(self.photoURLs)
                 DispatchQueue.main.async {
                     self.loader?(false)
                     self.reloadCollectionView()

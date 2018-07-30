@@ -32,7 +32,6 @@
 		09D9F2965B2A5280E5BED140BCD2F59D /* FKFlickrPushUnsubscribe.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F284F2250529608A874E9264AB2F1F /* FKFlickrPushUnsubscribe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09E6A07909AE31B06BC789D2C9BF1898 /* FKFlickrPhotosSuggestionsRejectSuggestion.h in Headers */ = {isa = PBXBuildFile; fileRef = 288C7E7A842CA7A116E99B738C484DF8 /* FKFlickrPhotosSuggestionsRejectSuggestion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A26655B34C305E13A6354BB2E1496A3 /* FKFlickrGroupsDiscussRepliesEdit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3191DA4EEDC0DA474BBAA25CBBD01CFC /* FKFlickrGroupsDiscussRepliesEdit.m */; };
-		0A64897873B917015AC6F2DE5110921A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411124A3ED8CF451636455527DDE34B2 /* Foundation.framework */; };
 		0AF04CBC8F767DA5C0B04B3A206B8B25 /* FKFlickrCamerasGetBrands.h in Headers */ = {isa = PBXBuildFile; fileRef = 977253980B552C0EC009CE53C4E9192A /* FKFlickrCamerasGetBrands.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B6661FDB294C7741E8E787CD316847B /* FKFlickrBlogsPostPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = AD94C3962664CDD0D10BA534C8263AAD /* FKFlickrBlogsPostPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C33307C1D301F5B0196AFAE629E100D /* FKFlickrPhotosPeopleDeleteCoords.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B2E3BA92F33213E23A5A6DD00DA1B8 /* FKFlickrPhotosPeopleDeleteCoords.m */; };
@@ -164,6 +163,7 @@
 		4746F697E40BAAD5BDF4E995F4C9A6C2 /* FKFlickrGalleriesGetPhotos.h in Headers */ = {isa = PBXBuildFile; fileRef = 1432820C57694BB83C281700975E4989 /* FKFlickrGalleriesGetPhotos.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47CCC10130AB968F83B603E1FD7943E2 /* FKFlickrPhotosetsCommentsDeleteComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FE1AE21C00CC4F39443A9120A8F8E50 /* FKFlickrPhotosetsCommentsDeleteComment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48AF64D867DB35561680F4B287CD5178 /* FKFlickrStatsGetTotalViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CC79002B3A41D458D78EC516689CC85A /* FKFlickrStatsGetTotalViews.m */; };
+		497D461BCDE79D02BE9AA5EE68F550C0 /* Pods-FlickaloreTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6D8963458FBE27875A5BDF563384FD /* Pods-FlickaloreTests-dummy.m */; };
 		498DC29155467AC093701C1AF5EE3807 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC8E6050C1347C04EF42DB99FFF86EE /* Placeholder.swift */; };
 		49B6D591C6A4D1D10F88A0E03B469513 /* FKFlickrPhotosGetWithoutGeoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E39D813F5C68341AD5848F9B885FDD4 /* FKFlickrPhotosGetWithoutGeoData.m */; };
 		4A2BBE88395C7A6F3963FEB1CEFA9748 /* FKFlickrPlacesPlacesForTags.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D8CD2815DE48349F1D8B1849C4D7A3 /* FKFlickrPlacesPlacesForTags.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -312,6 +312,7 @@
 		99DBF5937857FA7A904ABC0CA2E15126 /* FlickrKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FDF320FFF72EA9C84B8EB7015D2CED /* FlickrKit.m */; };
 		9B4343C141590075FBA97628C9922738 /* FKFlickrPrefsGetGeoPerms.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D15987B190975B3B0D6C7FF9D90501D /* FKFlickrPrefsGetGeoPerms.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BA3D9C869A732C995B8020EB5B81DE9 /* FKFlickrPhotosPeopleDeleteCoords.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B3DB7C45AA65AE5E721D9D9E505AA4 /* FKFlickrPhotosPeopleDeleteCoords.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C4FEA59B9D3ECA6E1FB09E8EE412659 /* Pods-FlickaloreTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 797780ADE58D2A71A4B45C6459AF8651 /* Pods-FlickaloreTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C7A3C5D645617D01E91EBFA11DA2A43 /* FKFlickrStatsGetPhotoStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BA607072682F40E769812E1A18ED9 /* FKFlickrStatsGetPhotoStats.m */; };
 		9C92C373CB224C0EA249EEE889FB252A /* FKFlickrTagsGetMostFrequentlyUsed.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5C787D327ECA21EE8BD6D575CE4D98 /* FKFlickrTagsGetMostFrequentlyUsed.m */; };
 		9D1A064EB448E4A59FA6A1DAEEEC7408 /* FKFlickrPhotosGetWithGeoData.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DE5B28F0148E4B9CB39DE1C915C752 /* FKFlickrPhotosGetWithGeoData.m */; };
@@ -430,11 +431,11 @@
 		DC7CF33DD14E1183B4DC828FA0BD90D0 /* FKFlickrGalleriesEditMeta.h in Headers */ = {isa = PBXBuildFile; fileRef = B36D01A334BA65BD8118CBFF04FC3A56 /* FKFlickrGalleriesEditMeta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCC0033E15E1531B73DCA5AA4EE178CE /* FKFlickrStatsGetPhotostreamDomains.h in Headers */ = {isa = PBXBuildFile; fileRef = EC5F4F50E6D610197218D021C4866B72 /* FKFlickrStatsGetPhotostreamDomains.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCDE323FFF4AA2E4DE97AF858CE3FCB7 /* FKFlickrStatsGetPhotosetReferrers.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7DFAD66BA1D72333CE940B6591AB5F /* FKFlickrStatsGetPhotosetReferrers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCE3D9A5F8109F6ABE089D09B55BBAB9 /* Pods-FlickaloreTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6D8963458FBE27875A5BDF563384FD /* Pods-FlickaloreTests-dummy.m */; };
 		DF008E0D090366F7A8C562B22C1710C4 /* FKFlickrPhotosSuggestionsGetList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC489CF47BC1C0D73CF9C73C1E3886C /* FKFlickrPhotosSuggestionsGetList.m */; };
 		DF24E05E6C71A38083B8D67377A2DA60 /* FKFlickrPhotosGetExif.m in Sources */ = {isa = PBXBuildFile; fileRef = 381B629C17CF744E55326C53E13E916A /* FKFlickrPhotosGetExif.m */; };
 		E0300C33B413AAF681929D6F0004F007 /* FKFlickrPhotosPeopleDelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 3477D625F2778632D620D1E897C815F1 /* FKFlickrPhotosPeopleDelete.m */; };
 		E03C2E7715F48272B7F3059327FF112D /* FKFlickrPlacesGetShapeHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = E99457AB643AF6606A9C8E9723960D64 /* FKFlickrPlacesGetShapeHistory.m */; };
+		E0FBD3D3A47A3D58DA579298EB002766 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411124A3ED8CF451636455527DDE34B2 /* Foundation.framework */; };
 		E214F3D3F5049755562CBB1835466CAC /* FKFlickrGalleriesGetList.h in Headers */ = {isa = PBXBuildFile; fileRef = FFF3BCB3E3C648FF25FC458BC49AE1DE /* FKFlickrGalleriesGetList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E24709A1BCA2384C7E2941938CBEF225 /* FKDUNetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D00F2A0EE7BFAAEFB9F6940BA69A4F6 /* FKDUNetworkController.m */; };
 		E2A0F69157E84E46D4A2F1189E723AFD /* FKFlickrTagsGetRelated.m in Sources */ = {isa = PBXBuildFile; fileRef = B965A8D0E0F1FDA2CBD24E9C19702B67 /* FKFlickrTagsGetRelated.m */; };
@@ -499,7 +500,6 @@
 		FDA6EA07028321A3BB8294BBC060E8F7 /* FKFlickrPhotosetsAddPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = F2303C7DB8C10F09FF5CC57361A11600 /* FKFlickrPhotosetsAddPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDB14C0BB761A843D76122875D3C8441 /* FKFlickrTestEcho.h in Headers */ = {isa = PBXBuildFile; fileRef = 19795A1BA0E00317F834A8725FB6C848 /* FKFlickrTestEcho.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDC239151B8B32B006C856E9F1D97A47 /* FKFlickrPhotosNotesAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DD4B79357EDF84E0BBC95BA064A534 /* FKFlickrPhotosNotesAdd.m */; };
-		FDCBD11238C9BDCAE9D8504DCD90848D /* Pods-FlickaloreTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 797780ADE58D2A71A4B45C6459AF8651 /* Pods-FlickaloreTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FECBB66193CE1380EB2721092577B4F4 /* FKFlickrBlogsGetList.h in Headers */ = {isa = PBXBuildFile; fileRef = 44835823A7D8971111A668571C79103F /* FKFlickrBlogsGetList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FECF9977EFF8032BAA33DF4F123C3B6C /* FKFlickrAuthOauthCheckToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B118F0AD9C95C5329E5B70CECA55D5FC /* FKFlickrAuthOauthCheckToken.m */; };
 		FED97351EC4705507DAB175106B819C8 /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14D1A9FBEDF745947527CF5BB244627 /* UIButton+Kingfisher.swift */; };
@@ -515,7 +515,7 @@
 			remoteGlobalIDString = C3DF0959C98A00D0A1EACE925ACED3F0;
 			remoteInfo = ReachabilitySwift;
 		};
-		1E5882E640F039927326D5F3AA2B5B37 /* PBXContainerItemProxy */ = {
+		2ABBECFB2CFBE71C7060AFFFA7587B3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -528,6 +528,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4F87037150ABE2C9238B54E8F6E33F36;
 			remoteInfo = Kingfisher;
+		};
+		84629DE2A6CAB0D4600799B1EB727F55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1D2C6B2423E1D67F01F334C97C168DD;
+			remoteInfo = FlickrKit;
 		};
 		909920906CD518B233B940EE5226465C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1103,6 +1110,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B33FA1E746EDF9E89B9899DF8DA6DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0FBD3D3A47A3D58DA579298EB002766 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1C35743058065233BDB8AB4C1D63D416 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1144,14 +1159,6 @@
 			files = (
 				E874D69DB9DC58BE8A2AD7D65F4A2941 /* Foundation.framework in Frameworks */,
 				C2812F9303AF30509CBB1A18A1DECEF8 /* SystemConfiguration.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FEB0CCD61A1EC2542D5A1D21E7F23B8B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A64897873B917015AC6F2DE5110921A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1861,20 +1868,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D527D3900742DBFF084614A70FEFD68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4FEA59B9D3ECA6E1FB09E8EE412659 /* Pods-FlickaloreTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BADBBCEED9A9F8B15B7F98467EA6FB0E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				509A5621DAB44B06929B30ACCA7CA598 /* Kingfisher-umbrella.h in Headers */,
 				BA4DF38E820FF6B40FFABF8B1BBCC615 /* Kingfisher.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC0B3E9215F4430E0B308B226A1300C9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FDCBD11238C9BDCAE9D8504DCD90848D /* Pods-FlickaloreTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2147,6 +2154,25 @@
 			productReference = 265E530459DDE799D94AF0EED0D32531 /* Kingfisher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		5D91265E9D7AF3E354293456CB6E4633 /* Pods-FlickaloreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB30E302E0A60BB539F8822FEEA9D336 /* Build configuration list for PBXNativeTarget "Pods-FlickaloreTests" */;
+			buildPhases = (
+				4989409E9A56EAA66333796EE209C408 /* Sources */,
+				0B33FA1E746EDF9E89B9899DF8DA6DC2 /* Frameworks */,
+				9D527D3900742DBFF084614A70FEFD68 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58D7DFDD24913D3F2936E5131A20A8AB /* PBXTargetDependency */,
+				DCB8F4A6CD9A4FAC0567BC4BE808686C /* PBXTargetDependency */,
+			);
+			name = "Pods-FlickaloreTests";
+			productName = "Pods-FlickaloreTests";
+			productReference = 924225822FF72F34C3AF1723970D428B /* Pods_FlickaloreTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		97CAD7216A8443531BB0B11AC8F5BB43 /* Toast-Swift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B65DE1FC97C183705294D10A002F4344 /* Build configuration list for PBXNativeTarget "Toast-Swift" */;
@@ -2162,24 +2188,6 @@
 			name = "Toast-Swift";
 			productName = "Toast-Swift";
 			productReference = 9713327D3BF77A1486A7C40249754460 /* Toast_Swift.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		98B65EA7A1AAF80510CEE7E63A0F6AD9 /* Pods-FlickaloreTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 72CF45E1C8E9F30E6C2A20B10C4B3DD9 /* Build configuration list for PBXNativeTarget "Pods-FlickaloreTests" */;
-			buildPhases = (
-				4DDFC2B86860D9873006AAEC663505CF /* Sources */,
-				FEB0CCD61A1EC2542D5A1D21E7F23B8B /* Frameworks */,
-				BC0B3E9215F4430E0B308B226A1300C9 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				88D363B1E68F6B4EBF1B4CD9F459B343 /* PBXTargetDependency */,
-			);
-			name = "Pods-FlickaloreTests";
-			productName = "Pods-FlickaloreTests";
-			productReference = 924225822FF72F34C3AF1723970D428B /* Pods_FlickaloreTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B1D2C6B2423E1D67F01F334C97C168DD /* FlickrKit */ = {
@@ -2279,7 +2287,7 @@
 				B1D2C6B2423E1D67F01F334C97C168DD /* FlickrKit */,
 				4F87037150ABE2C9238B54E8F6E33F36 /* Kingfisher */,
 				C9A2085B2448D52314729DBBDC73B941 /* Pods-Flickalore */,
-				98B65EA7A1AAF80510CEE7E63A0F6AD9 /* Pods-FlickaloreTests */,
+				5D91265E9D7AF3E354293456CB6E4633 /* Pods-FlickaloreTests */,
 				C0B4F546E6530FA527ACA4BD8295119D /* Pods-FlickaloreUITests */,
 				C3DF0959C98A00D0A1EACE925ACED3F0 /* ReachabilitySwift */,
 				97CAD7216A8443531BB0B11AC8F5BB43 /* Toast-Swift */,
@@ -2565,11 +2573,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DDFC2B86860D9873006AAEC663505CF /* Sources */ = {
+		4989409E9A56EAA66333796EE209C408 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCE3D9A5F8109F6ABE089D09B55BBAB9 /* Pods-FlickaloreTests-dummy.m in Sources */,
+				497D461BCDE79D02BE9AA5EE68F550C0 /* Pods-FlickaloreTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2606,6 +2614,12 @@
 			target = 4F87037150ABE2C9238B54E8F6E33F36 /* Kingfisher */;
 			targetProxy = 4E6E275F3AC5842DA2BC2A34F47DB277 /* PBXContainerItemProxy */;
 		};
+		58D7DFDD24913D3F2936E5131A20A8AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlickrKit;
+			target = B1D2C6B2423E1D67F01F334C97C168DD /* FlickrKit */;
+			targetProxy = 84629DE2A6CAB0D4600799B1EB727F55 /* PBXContainerItemProxy */;
+		};
 		6CC9586FDEDA55ED55FFF050BAD8F669 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Toast-Swift";
@@ -2618,11 +2632,11 @@
 			target = C3DF0959C98A00D0A1EACE925ACED3F0 /* ReachabilitySwift */;
 			targetProxy = 0CEA16050B2B8272307E7D8C452072B1 /* PBXContainerItemProxy */;
 		};
-		88D363B1E68F6B4EBF1B4CD9F459B343 /* PBXTargetDependency */ = {
+		DCB8F4A6CD9A4FAC0567BC4BE808686C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Flickalore";
 			target = C9A2085B2448D52314729DBBDC73B941 /* Pods-Flickalore */;
-			targetProxy = 1E5882E640F039927326D5F3AA2B5B37 /* PBXContainerItemProxy */;
+			targetProxy = 2ABBECFB2CFBE71C7060AFFFA7587B3B /* PBXContainerItemProxy */;
 		};
 		E81D5A1948CD2D74B96FD27F8CED3A77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2695,83 +2709,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FlickaloreUITests/Pods-FlickaloreUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1C4C45121926349FDE1C38CE8203D362 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD8CDBEE604F98741C71F7BE757F3F7D /* Pods-FlickaloreTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FlickaloreTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FlickaloreTests/Pods-FlickaloreTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1E4B443C9D83EC4BBE45F7AB94017D70 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74C4F4CE72BD181BD2A9797969476063 /* Pods-FlickaloreTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FlickaloreTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FlickaloreTests/Pods-FlickaloreTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -3202,6 +3139,45 @@
 			};
 			name = Debug;
 		};
+		D5A299293DDD8E0585887FD7CDD38030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74C4F4CE72BD181BD2A9797969476063 /* Pods-FlickaloreTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlickaloreTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlickaloreTests/Pods-FlickaloreTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		F05DBD8388D16F2766602C773327580D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 886A7B1C1048A36B28D670C4B6714923 /* Pods-Flickalore.debug.xcconfig */;
@@ -3278,6 +3254,44 @@
 			};
 			name = Debug;
 		};
+		FEA665F440C8B9F86B1EAFE950CB8690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD8CDBEE604F98741C71F7BE757F3F7D /* Pods-FlickaloreTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlickaloreTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlickaloreTests/Pods-FlickaloreTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3326,15 +3340,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		72CF45E1C8E9F30E6C2A20B10C4B3DD9 /* Build configuration list for PBXNativeTarget "Pods-FlickaloreTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1C4C45121926349FDE1C38CE8203D362 /* Debug */,
-				1E4B443C9D83EC4BBE45F7AB94017D70 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B65DE1FC97C183705294D10A002F4344 /* Build configuration list for PBXNativeTarget "Toast-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3349,6 +3354,15 @@
 			buildConfigurations = (
 				C29B17F660703532F2FC37D30FB325F4 /* Debug */,
 				1A047D20A5FC20DCB96B69C08B3C6E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB30E302E0A60BB539F8822FEEA9D336 /* Build configuration list for PBXNativeTarget "Pods-FlickaloreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEA665F440C8B9F86B1EAFE950CB8690 /* Debug */,
+				D5A299293DDD8E0585887FD7CDD38030 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
