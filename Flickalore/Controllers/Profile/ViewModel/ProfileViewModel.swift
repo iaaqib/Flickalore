@@ -37,12 +37,12 @@ class ProfileViewModel: NSObject {
             if reachability.connection == .wifi || reachability.connection == .cellular {
                 self.checkAuthorization()
             } else {
-                self.showMessage?(Constants.internetConnectivityMessage)
+                self.showMessage?(Constants.ErrorMessages.internetConnectivityMessage.string)
             }
         }
         reachability.whenUnreachable = { [weak self] _ in
             guard let `self` = self else { return }
-            self.showMessage?(Constants.internetConnectivityMessage)
+            self.showMessage?(Constants.ErrorMessages.internetConnectivityMessage.string)
         }
         
         do {
@@ -79,7 +79,6 @@ class ProfileViewModel: NSObject {
                     self.showMessage?(error.localizedDescription)
                 }
             } else if let response = response, let photoArray = self.flickrKit.photoArray(fromResponse: response) {
-                
                 photoArray.forEach({ (photoDictionary) in
                     let photoURL = self.flickrKit.photoURL(for: FKPhotoSize.small320, fromPhotoDictionary: photoDictionary)
                     

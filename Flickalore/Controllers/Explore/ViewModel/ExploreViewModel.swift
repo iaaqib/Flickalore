@@ -15,6 +15,7 @@ class ExploreViewModel: NSObject {
     private let flickrKit: FlickrKit
     private lazy var photoURLs: [URL] = []
     private var pageNumber: String = "1"
+    private var totalPages: String = ""
     private let reachability = Reachability()!
     //Callbacks to update UI
     var reloadCollectionView: () -> ()
@@ -37,12 +38,12 @@ class ExploreViewModel: NSObject {
             if reachability.connection == .wifi || reachability.connection == .cellular {
                 self.getExplore()
             } else {
-                self.showMessage?(Constants.internetConnectivityMessage)
+                self.showMessage?(Constants.ErrorMessages.internetConnectivityMessage.string)
             }
         }
         reachability.whenUnreachable = { [weak self] _ in
             guard let `self` = self else { return }
-            self.showMessage?(Constants.internetConnectivityMessage)
+            self.showMessage?(Constants.ErrorMessages.internetConnectivityMessage.string)
         }
         
         do {
@@ -66,7 +67,9 @@ class ExploreViewModel: NSObject {
                 }
                 
             } else if let response = response, let photoArray = self.flickrKit.photoArray(fromResponse: response) {
-                
+                if let pages = response["photos"] as? NSDictionary, let totalPages = pages["pages"] as? Int {
+                    self.totalPages = totalPages.toString
+                }
                 photoArray.forEach({ photoDictionary in
                     let photoURL = self.flickrKit.photoURL(for: FKPhotoSize.small320 , fromPhotoDictionary: photoDictionary)
                     self.photoURLs.append(photoURL)
@@ -86,8 +89,13 @@ class ExploreViewModel: NSObject {
     func loadMore(index: Int) {
         if index == photoURLs.count - 1 {
             pageNumber = (pageNumber.toInt + 1).toString
+            if pageNumber.toInt <= totalPages.toInt {
             getExplore(page: pageNumber)
-        
+            } else {
+                //Nothing more to show
+                self.loader?(false)
+                self.showMessage?(Constants.ErrorMessages.nothingMore.string)
+            }
         }
     }
     // MARK: - De-initialzier
