@@ -102,6 +102,12 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sJ3-fB-uoh">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="pinchImageView">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="pinchImageView"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -112,12 +118,16 @@
                                     <constraint firstItem="sJ3-fB-uoh" firstAttribute="height" secondItem="Owl-lt-xEl" secondAttribute="height" id="Tid-wd-KZt"/>
                                     <constraint firstItem="sJ3-fB-uoh" firstAttribute="top" secondItem="Owl-lt-xEl" secondAttribute="top" id="lRO-su-u6L"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="zoomScrollView"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="qtH-h7-sYv" id="jvm-dW-SUA"/>
                                 </connections>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovR-lg-E7o">
                                 <rect key="frame" x="5" y="30" width="24" height="24"/>
+                                <accessibility key="accessibilityConfiguration" identifier="backButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="5cn-dk-mzC"/>
                                     <constraint firstAttribute="width" constant="24" id="ZRw-OD-Jx9"/>
@@ -125,6 +135,16 @@
                                 <state key="normal" image="left-arrow"/>
                                 <connections>
                                     <action selector="backAction:" destination="qtH-h7-sYv" eventType="touchUpInside" id="gTe-IV-ice"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDf-nn-RBu">
+                                <rect key="frame" x="308" y="20" width="47" height="34"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveImage:" destination="qtH-h7-sYv" eventType="touchUpInside" id="4c9-iH-auA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -135,7 +155,9 @@
                             <constraint firstItem="ovR-lg-E7o" firstAttribute="leading" secondItem="L83-10-epQ" secondAttribute="leading" constant="5" id="CfK-Ta-9OP"/>
                             <constraint firstItem="L83-10-epQ" firstAttribute="bottom" secondItem="Owl-lt-xEl" secondAttribute="bottom" id="FQY-ce-Oqg"/>
                             <constraint firstItem="ovR-lg-E7o" firstAttribute="top" secondItem="L83-10-epQ" secondAttribute="top" constant="10" id="PDB-n8-cng"/>
+                            <constraint firstItem="uDf-nn-RBu" firstAttribute="top" secondItem="L83-10-epQ" secondAttribute="top" id="U2f-dE-WW5"/>
                             <constraint firstItem="Owl-lt-xEl" firstAttribute="leading" secondItem="L83-10-epQ" secondAttribute="leading" id="j8v-cN-LoV"/>
+                            <constraint firstItem="L83-10-epQ" firstAttribute="trailing" secondItem="uDf-nn-RBu" secondAttribute="trailing" constant="20" id="qiB-Vs-9xW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="L83-10-epQ"/>
                     </view>

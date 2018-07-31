@@ -30,6 +30,19 @@ class PinchZoomViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func saveImage(_ sender: UIButton) {
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+
+    }
+    
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            self.view.makeToast(error.localizedDescription, duration: 1, position: .center)
+        } else {
+            self.view.makeToast(Constants.Messages.photoSaved.string, duration: 1, position: .center)
+        }
+    }
+    
     override func willMove(toParentViewController parent: UIViewController?) {
         if parent == nil {
             self.navigationController?.hideTransparentNavigationBar()

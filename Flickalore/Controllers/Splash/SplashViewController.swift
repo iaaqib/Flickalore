@@ -17,9 +17,15 @@ class SplashViewController: UIViewController {
     }
     
     @objc func loadController() {
-        //Decides which screen to take user to on basis of isUserLoggedIn
-        let viewController = UserManager.shared.isUserLoggedIn ? UITabBarController.instantiateViewController() : LoginWithFlickrViewController.instantiateViewController()
-        self.present(viewController, animated: true)
+        //Makes Login the Root
+        let loginViewController = LoginWithFlickrViewController.instantiateViewController()
+        UIApplication.shared.delegate?.window??.rootViewController = loginViewController
+        UIApplication.shared.delegate?.window??.makeKeyAndVisible()
+        //Decides if User is Loggedin then take to Home.
+        if UserManager.shared.isUserLoggedIn {
+            let viewController = UITabBarController.instantiateViewController()
+            loginViewController.present(viewController, animated: true)
+        }
     }
     
 }

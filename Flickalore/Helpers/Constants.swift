@@ -12,12 +12,13 @@ class Constants: NSObject {
 
     static let screenBounds = UIScreen.main.bounds
     
-    enum ErrorMessages: String {
+    enum Messages: String {
         case internetConnectivityMessage = "Please connect to internet and try again!"
         case nothingMore = "Nothing More to Show."
         var string: String {
             return self.rawValue
         }
+        case photoSaved = "Picture has been saved to your photo gallery."
     }
     
     enum APIKeys: String {

@@ -57,10 +57,8 @@ class ProfileViewController: UIViewController {
     //MARK: - Action
     @IBAction func logOutAction(_ sender: UIBarButtonItem) {
         viewModel.logout()
-        tabBarController?.dismiss(animated: true, completion: {
-            let loginViewController = LoginWithFlickrViewController.instantiateViewController()
-            UIApplication.shared.delegate?.window??.rootViewController = loginViewController
-        })
+        tabBarController?.dismiss(animated: true)
+
         
     }
     //MARK: - Orientation Changed

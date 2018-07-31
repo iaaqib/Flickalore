@@ -15,7 +15,7 @@ class ProfileViewModel: NSObject {
     private let flickrKit: FlickrKit
     private let reachability = Reachability()!
     private lazy var photoURLs: [URL] = []
-    let user = UserManager.shared.getLoggedInUser()!
+    let user: User
     //Callbacks to update UI
     var reloadCollectionView: () -> ()
     var loader: ((_ status: Bool) -> ())? = nil
@@ -26,9 +26,10 @@ class ProfileViewModel: NSObject {
     }
     
     //MARK: - Initializer
-    init(flickrKit: FlickrKit = FlickrKit.shared()) {
+    init(flickrKit: FlickrKit = FlickrKit.shared(), user: User = UserManager.shared.getLoggedInUser()!) {
         self.flickrKit = flickrKit
         self.reloadCollectionView = {}
+        self.user = user
     }
     //MARK: - Functions
     func loadPhotos() {
@@ -37,12 +38,12 @@ class ProfileViewModel: NSObject {
             if reachability.connection == .wifi || reachability.connection == .cellular {
                 self.checkAuthorization()
             } else {
-                self.showMessage?(Constants.ErrorMessages.internetConnectivityMessage.string)
+                self.showMessage?(Constants.Messages.internetConnectivityMessage.string)
             }
         }
         reachability.whenUnreachable = { [weak self] _ in
             guard let `self` = self else { return }
-            self.showMessage?(Constants.ErrorMessages.internetConnectivityMessage.string)
+            self.showMessage?(Constants.Messages.internetConnectivityMessage.string)
         }
         
         do {
@@ -81,11 +82,10 @@ class ProfileViewModel: NSObject {
             } else if let response = response, let photoArray = self.flickrKit.photoArray(fromResponse: response) {
                 
                 photoArray.forEach({ (photoDictionary) in
-                    let photoURL = self.flickrKit.photoURL(for: FKPhotoSize.small320, fromPhotoDictionary: photoDictionary)
+                    let photoURL = self.flickrKit.photoURL(for: FKPhotoSize.medium640, fromPhotoDictionary: photoDictionary)
                     
                     self.photoURLs.append(photoURL)
                 })
-                print(self.photoURLs)
                 DispatchQueue.main.async {
                     self.loader?(false)
                     self.reloadCollectionView()

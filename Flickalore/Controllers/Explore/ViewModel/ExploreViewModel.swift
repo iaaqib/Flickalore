@@ -17,6 +17,7 @@ class ExploreViewModel: NSObject {
     private var pageNumber: String = "1"
     private var totalPages: String = ""
     private let reachability = Reachability()!
+    let user: User
     //Callbacks to update UI
     var reloadCollectionView: () -> ()
     var loader: ((_ status: Bool) -> ())? = nil
@@ -26,10 +27,12 @@ class ExploreViewModel: NSObject {
         return photoURLs.count
     }
     // MARK: - Initializer
-    init(flickrKit: FlickrKit = FlickrKit.shared()) {
+    init(flickrKit: FlickrKit = FlickrKit.shared(), user: User = UserManager.shared.getLoggedInUser()!) {
         self.flickrKit = flickrKit
         self.reloadCollectionView = {}
+        self.user = user
     }
+    
     // MARK: - Functions
     //Fetches explore section of Flickr
     func loadExplore() {
@@ -38,12 +41,12 @@ class ExploreViewModel: NSObject {
             if reachability.connection == .wifi || reachability.connection == .cellular {
                 self.getExplore()
             } else {
-                self.showMessage?(Constants.ErrorMessages.internetConnectivityMessage.string)
+                self.showMessage?(Constants.Messages.internetConnectivityMessage.string)
             }
         }
         reachability.whenUnreachable = { [weak self] _ in
             guard let `self` = self else { return }
-            self.showMessage?(Constants.ErrorMessages.internetConnectivityMessage.string)
+            self.showMessage?(Constants.Messages.internetConnectivityMessage.string)
         }
         
         do {
@@ -70,12 +73,10 @@ class ExploreViewModel: NSObject {
                 if let pages = response["photos"] as? NSDictionary, let totalPages = pages["pages"] as? Int {
                     self.totalPages = totalPages.toString
                 }
-                print(photoArray)
                 photoArray.forEach({ photoDictionary in
-                    let photoURL = self.flickrKit.photoURL(for: FKPhotoSize.small320 , fromPhotoDictionary: photoDictionary)
+                    let photoURL = self.flickrKit.photoURL(for: FKPhotoSize.medium640 , fromPhotoDictionary: photoDictionary)
                     self.photoURLs.append(photoURL)
                 })
-                print(self.photoURLs)
                 DispatchQueue.main.async {
                     self.loader?(false)
                     self.reloadCollectionView()
@@ -96,7 +97,7 @@ class ExploreViewModel: NSObject {
             } else {
                 //Nothing more to show
                 self.loader?(false)
-                self.showMessage?(Constants.ErrorMessages.nothingMore.string)
+                self.showMessage?(Constants.Messages.nothingMore.string)
             }
         }
     }
